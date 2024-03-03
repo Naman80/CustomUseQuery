@@ -1,0 +1,55 @@
+.grow-wrap {
+  position: relative;
+  max-height: 500px;
+  min-height: 100px;
+  width: 450px;
+}
+.grow-wrap * {
+  font-family: sans-serif;
+  font-size: 16px;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.grow-wrap > textarea {
+  color: red;
+  height: 100%;
+  width: 85%;
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+
+  -webkit-text-fill-color: transparent;
+
+  position: absolute;
+  top: 0%;
+  left: 9.8%;
+  resize: none;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+.code__container {
+  padding: 10px 10px 10px 0px;
+  overflow-y: auto;
+  min-height: inherit;
+  max-height: inherit;
+  width: inherit;
+}
+
+.settings {
+  display: flex;
+}
+.line__index {
+  text-align: end;
+  margin-right: 2%;
+  width: 10%;
+}
+.line__text {
+  width: 85%;
+}
